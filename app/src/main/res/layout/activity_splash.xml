@@ -1,0 +1,17 @@
+<!-- res/layout/activity_splash.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+
+    <!-- You can customize the splash screen layout here -->
+    <!-- Add your logo or any other content -->
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/babycare_logo"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".RegisterActivity">
+
+        <RadioGroup
+            android:id="@+id/registrationTypeRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <RadioButton
+                android:id="@+id/parentRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Parent"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/doctorRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doctor" />
+
+        </RadioGroup>
+
+
+        <LinearLayout
+            android:id="@+id/commonRegistrationLayout"
+            android:orientation="vertical"
+            android:padding="25dp"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- ... (existing layout components) ... -->
+
+
+
+            <!-- ... (rest of your layout components) ... -->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/parentLayout"
+            android:orientation="vertical"
+            android:padding="25dp"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Register"
+                android:textColor="#0000FF"
+                android:textSize="40dp"
+                android:textStyle="bold"
+
+                />
+
+            <!-- Profile Picture Section -->
+            <ImageView
+                android:id="@+id/parent_profilePictureImageView"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/profile_pic" />
+
+            <Button
+                android:id="@+id/parent_uploadPictureButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Parent's Photo"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/baby_name"
+                android:hint="Baby's Name"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#336C2D"
+                android:background="@drawable/edit_text_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/baby_age"
+                android:hint="Baby's Age"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#336C2D"
+                android:background="@drawable/edit_text_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/baby_place_of_birth"
+                android:hint="Baby's Place of Birth"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#336C2D"
+                android:background="@drawable/edit_text_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/parent_name"
+                android:hint="Parent's Name"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#336C2D"
+                android:background="@drawable/edit_text_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/place_of_residence"
+                android:hint="Place of Residence"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#336C2D"
+                android:background="@drawable/edit_text_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/parent_phone"
+                android:hint="Phone Number"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#336C2D"
+                android:background="@drawable/edit_text_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/parent_email"
+                android:hint="Email"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#336C2D"
+                android:background="@drawable/edit_text_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/parent_password"
+                android:hint="Password"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#336C2D"
+                android:background="@drawable/edit_text_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/parent_rePassword"
+                android:hint="Confirm Password"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#336C2D"
+                android:background="@drawable/edit_text_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/parent_register"
+                android:layout_marginTop="17dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:background="@drawable/edit_text_background"
+                android:gravity="center"
+                android:textColor="#0000FF"
+                android:lines="2"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"/>
+
+            <TextView
+                android:id="@+id/parent_alreadyHaveAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Already have an Account?"
+                android:gravity="center"
+                android:lines="3"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/doctorLayout"
+            android:orientation="vertical"
+            android:padding="25dp"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <!-- Recruiter registration fields -->
+
+            <!-- ... (rest of your Recruiter UI) ... -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Register"
+                android:textColor="#0000FF"
+                android:textSize="40dp"
+                android:textStyle="bold"
+
+                />
+
+            <ImageView
+                android:id="@+id/doctor_profilePictureImageView"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/profile_pic" />
+
+            <Button
+                android:id="@+id/doctor_uploadPictureButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Doctor's Photo"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp" />
+
+
+            <EditText
+                android:id="@+id/doctor_name"
+                android:hint="Doctor's Name"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#336C2D"
+                android:background="@drawable/edit_text_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/Type_of_specialization"
+                android:hint="Type of Specialization"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#336C2D"
+                android:background="@drawable/edit_text_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/Hospital"
+                android:hint="Hospital"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#336C2D"
+                android:background="@drawable/edit_text_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/Registration_Number"
+                android:hint="Registration Number"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#336C2D"
+                android:background="@drawable/edit_text_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/doctor_email"
+                android:hint="Email"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#336C2D"
+                android:background="@drawable/edit_text_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/doctor_password"
+                android:hint="Password"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#336C2D"
+                android:background="@drawable/edit_text_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/doctor_rePassword"
+                android:hint="Confirm Password"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#336C2D"
+                android:background="@drawable/edit_text_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/doctor_register"
+                android:layout_marginTop="17dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:background="@drawable/edit_text_background"
+                android:gravity="center"
+                android:textColor="#0000FF"
+                android:lines="2"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"/>
+
+            <TextView
+                android:id="@+id/doctor_alreadyHaveAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Already have an Account?"
+                android:gravity="center"
+                android:lines="3"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

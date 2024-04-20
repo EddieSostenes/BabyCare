@@ -1,0 +1,47 @@
+<!-- res/layout/activity_welcome.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/medics">
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/welcome_background"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let's Get Started..."
+            android:textSize="28sp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_background"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_background"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+
+</RelativeLayout>
